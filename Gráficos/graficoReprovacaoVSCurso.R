@@ -8,12 +8,12 @@ library(ggplot2)
 library(readxl)
 
 # Carregar a base de dados
-dados <- read_excel("grupo_1 1.xls")
+dados <- read_excel("C:\\Estudos\\estatistica-scripts\\Gráficos\\grupo_1 1.xls")
 
 # Criar gráfico de barras comparando a variável curso para cada categoria de reprovações 
 grafico <- ggplot(dados, aes(x = curso, y = nroreprova, fill = curso)) +
   geom_boxplot(alpha = 0.6) +  
-  labs(title = "Gráfico de Violino de Curso por Reprovação",
+  labs(title = "Gráfico de Boxplot de Curso por Reprovação",
        x = "Gênero",
        y = "Numero reprovações") + 
   theme_minimal() +
